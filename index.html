@@ -16,13 +16,53 @@
 <body>
     <header>
         <!-- Example of an inline style assignment-->
-        <h1 style="color:rgb(190, 227, 95);text-align:center;">Topic Reviews</h1>
+        <h1 style="color:rgb(0, 0, 0);text-align:center;">Topic Reviews</h1>
         <nav>
             <!--anchors here-->
         </nav>
     </header>
     <main>
-        <div id='tables'><h2>Tables</h2></div>
+        <div id="forms"><h2>Forms</h2></div>
+        <div id="buttons"><h2>Buttons</h2>
+            <p> Styling buttons are an important way of guiding users. Buttons styling 
+                should be easily readable and improve the user experience (UX). Most styling 
+                can be done in a CSS file. 
+            </p>
+            <p>
+                Below are examples of some of the properties that may increase UX:
+            </p>
+            <div class="codeBox">
+                <pre>
+                    <code>     
+.btn {
+    background-color: #2176FF;           // assigning contrasted background colors
+    border-radius: 30px;                 // assign a border radius to appear less blocky
+    color: #ffffff;                      // constrast color of text with background
+    font-family: 'Raleway',sans-serif;   // assign a font family that is appropriate
+    font-size: 16px;                     // large enough text size
+    font-weight: 400;                    // font strength may be useful to change
+    padding: 14px;                       // padding increases readability
+    text-decoration: none;               // remove or keep text-underline
+    text-transform: uppercase;           // may change text to be uppercase   
+    cursor: pointer;                     // communicate with pointer
+  }
+  
+  .btn:hover {                           // change when the cursor hovers over 
+    background-color: lightblue;         // change background
+    color: darkblue;                     // change color
+    transition: color .4s ease-in,       // add a smooth transition
+    background-color .4s ease-in;
+  }
+  
+  .btn:active {                          // change when button is pressed
+    font-size: 18px;                     // change font size for readability
+    transition: font-size .1s ease-in-out;
+  }
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div id='tables'><h2>Tables</h2>
             <p> Tables are a useful way of displaying information to a user.
                 Displaying data in through HTML tables utilizes a row and column
                 system to organize data.
@@ -106,8 +146,7 @@
                     <td>Total: 32</td>
                 </tfoot>
             </table>
-            
-        <h2>Forms</h2>
+        </div>
     </main>
     <footer>
 
