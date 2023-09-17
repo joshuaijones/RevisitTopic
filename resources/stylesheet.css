@@ -1,0 +1,21 @@
+* {
+    color: black;
+}
+
+
+table,
+td {
+  border: 1px solid #333;
+}
+
+thead,
+tfoot {
+  background-color: transparent;
+  color: #fff;
+}
+
+.codeBox {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+  }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisit a Topic</title>
+    <style>
+        /* Internal style goes in head and is enclosed in <style> tags*/
+        body {
+          background-color: linen;
+        }
+    </style>
+    <!-- Linking a stylesheet-->
+    <link href="resources/stylesheet.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Example of an inline style assignment-->
+        <h1 style="color:rgb(190, 227, 95);text-align:center;">Topic Reviews</h1>
+        <nav>
+            <!--anchors here-->
+        </nav>
+    </header>
+    <main>
+        <div id='tables'><h2>Tables</h2></div>
+            <p> Tables are a useful way of displaying information to a user.
+                Displaying data in through HTML tables utilizes a row and column
+                system to organize data.
+            </p>
+            <p>
+                The standard HTML table format utilizes a basic structure:
+            </p>
+            <div class="codeBox">
+                <pre>
+                    <code>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;item1&lt;/th&gt;
+    &lt;th&gt;item2&lt;/th&gt;
+    &lt;th&gt;item3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;type1&lt;/td&gt;
+    &lt;td&gt;type2&lt;/td&gt;
+    &lt;td&gt;type3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;kind1&lt;/td&gt;
+    &lt;td&gt;kind2&lt;/td&gt;
+    &lt;td&gt;kind3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+                    </code>
+                </pre>
+            </div>
+            <p> Table tags indicate where the table starts and ends. The tags &lt;tr&gt;
+                reference the start and end of a table row. Table items occupy the same row 
+                in a line. The tag &lt;th&gt; refer to table headings while the tag &lt;td&gt;
+                refer to table data.
+            </p>
+            <p>
+                Tables may use semantic dividers to organize code. These code tags include: 
+                &lt;thead&gt; , &lt;tbody&gt; , and &lt;tfoot&gt;. These should be utilized similar
+                to the use of &lt;header&gt; ,  &lt;main&gt; , and &lt;footer&gt; for tables.
+            </p>
+            <p> An example below shows some of the capabilities of presenting data in a table.
+                Notice how the first row contains table headers labeling the column of data. 
+                The last row utilized a columnspan='int' property on an empty cell to fill 
+                three columns. This allows for the final cell to sit under reservation count.
+                In this case, the &lt;td&gt; utilized a columnspan='3' to span 3 columns.
+            </p>
+            <!-- table format example -->
+            <table>
+                <!-- this divider points to the top of a table: particularly <th> tags -->
+                <thead>
+                    <!-- tr stands for table row: creates a new row-->
+                    <tr>
+                        <!-- th stands for table heading: entry is not data itself-->
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Email</th>
+                        <th>Reservation Count</th>
+                    </tr>
+                </thead>  
+                <!-- tbody refers to the main contents of the table-->  
+                <tbody>
+                    <!-- new table row-->
+                    <tr>
+                        <!-- td stand for table data and contains information -->
+                        <td>John Jones</td>
+                        <td>123-456-7890</td>
+                        <td>johnjones@email.com</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Jacob Johnson</td>
+                        <td>213-546-8790</td>
+                        <td>jacobjohnson@email.com</td>
+                        <td>20</td>
+                        
+                    </tr>
+                </tbody>
+                <!-- this divider points to the bottom of a table -->
+                <tfoot>
+                    <td colspan="3"></td>
+                    <td>Total: 32</td>
+                </tfoot>
+            </table>
+            
+        <h2>Forms</h2>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
