@@ -1,5 +1,31 @@
 /* #1E466E , #E8E7E3 , */
+body {
+    margin: 30px 50px;
+}
 
+h1 {
+    font-family: 'Roboto';
+    font-size: 26px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Merriweather';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+li {
+    font-family: 'Merriweather';
+    font-size: 14px;
+    font-weight: 400;
+}
 
 .outlineBox {
     border-style: solid;
@@ -11,6 +37,13 @@
     padding: 10px;
     margin: 10px;
     display: inline-block;
+}
+
+.fontStandardStyle > div {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #E8E7E3;
 }
 
 .filledNavy {
@@ -33,8 +66,18 @@
     color: black;
 }
 
+.filledLinen {
+    background-color: #FAF0E6;
+    color: black;
+
+}
+
 .merriweather {
     font-family: 'Merriweather';
+}
+
+.roboto {
+    font-family: 'Roboto';
 }
 
 .boldText {

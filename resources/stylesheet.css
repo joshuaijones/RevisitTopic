@@ -1,12 +1,6 @@
-* {
-    color: black;
-    /* font-family: 'Times New Roman', Times, serif; */
-}
-
 body {
     background-color: linen;
   }
-
 
 table,
 td {
@@ -18,6 +12,14 @@ tfoot {
   background-color: transparent;
   color: #fff;
 } 
+
+.breadcrumb > li {
+  display: inline-block;
+}
+
+.breadcrumb li.location+li.location::before {
+  content: ' > '
+}
 
 .codeBox {
     border: 1px solid black;

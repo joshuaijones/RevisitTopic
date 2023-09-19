@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revist a Topic - Standard Styles</title>
     <link href="resources/standardstyle.css" type="text/css" rel="stylesheet">
+    <link href="resources/stylesheet.css" type="text/css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap');
     </style>
@@ -12,6 +13,12 @@
 <body>
     <head>
         <h1>Standard Styles</h1>
+        <nav>
+            <ul class="breadcrumb">
+                <li class="location"><a href="index.html">Home</a></li>
+                <li class="location"><a href="#">Standard Styles</a></li>
+            </ul>
+        </nav>
     </head>
     <main>
         <h2>Colors</h2>
@@ -32,17 +39,49 @@
                 <p>Tan</p>
                 <p>#FFE3A3</p>
             </div>
+            <div class="filledLinen outlineBox">
+                <p>Linen</p>
+                <p>#FAF0E6</p>
+            </div>
         </div>
 
         <h2>Fonts</h2>
         <div class="fontStandardStyle outlineBox">
-            <h3 class="merriweather">Merriweather</h3>
-            <p class="normalText merriweather">The quick brown fox jumps over the lazy dog.</p>
-            <p class="boldText merriweather">The quick brown fox jumps over the lazy dog.</p>
-            <p class="italText merriweather">The quick brown fox jumps over the lazy dog.</p>
+            <div>
+                <h3 class="merriweather">Merriweather</h3>
+                <p class="normalText merriweather">The quick brown fox jumps over the lazy dog.</p>
+                <p class="boldText merriweather">The quick brown fox jumps over the lazy dog.</p>
+                <p class="italText merriweather">The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div>
+                <h3 class="roboto">Roboto</h3>
+                <p class="normalText roboto">The quick brown fox jumps over the lazy dog.</p>
+                <p class="boldText roboto">The quick brown fox jumps over the lazy dog.</p>
+                <p class="italText roboto">The quick brown fox jumps over the lazy dog.</p>
+            </div>
         </div>
-        <div id="textStandardStyle">
-            <h2>Text Styles</h2>
+        <h2>Text Styles</h2>
+        <div id="textStandardStyle outlineBox">
+            <div class="outlineBox">
+                <h1>H1: Main page heading</h1>
+                <ul>
+                    <li>Font-weight: 700 (bold)</li>
+                    <li>Font-size: 26px </li>
+                    <li>Font-family: Roboto</li>
+                </ul>
+                <h2>H2: Subheading</h2>
+                <ul>
+                    <li>Font-weight: 500 </li>
+                    <li>Font-size: 18px </li>
+                    <li>Font-family: Merriweather </li>
+                </ul>
+                <p>P: Paragraph text</p>
+                <ul>
+                    <li>Font-weight: 400 (regular) </li>
+                    <li>Font-size: 14px </li>
+                    <li>Font-family: Merriweather </li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer>
