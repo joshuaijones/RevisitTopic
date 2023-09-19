@@ -24,4 +24,28 @@ tfoot {
     padding: 10px;
     margin: 10px;
     width: auto;
-  }
+}
+
+#buttonsCustomization {
+    background-color: #2176FF;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+    
+#buttonsCustomization:hover {
+    background-color: lightblue;
+    color: darkblue;
+    transition: color .4s ease-in, background-color .4s ease-in;
+}
+    
+#buttonsCustomization:active {
+    font-size: 18px;
+    transition: font-size .1s ease-in-out;
+}
