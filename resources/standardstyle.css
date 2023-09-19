@@ -1,0 +1,46 @@
+/* #1E466E , #E8E7E3 , */
+
+
+.outlineBox {
+    border-style: solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.filledColor > div {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.filledNavy {
+    background-color: #005975;
+    color: #fff
+}
+
+.filledDarkBlue {
+    background-color: #1E466E;
+    color: #fff
+}
+
+.filledWhite {
+    background-color: #E8E7E3;
+    color: black;
+}
+
+.filledTan {
+    background-color: #FFE3A3;
+    color: black;
+}
+
+.merriweather {
+    font-family: 'Merriweather';
+}
+
+.boldText {
+    font-weight: 700;
+}
+
+.italText {
+    font-style: italic;
+}
